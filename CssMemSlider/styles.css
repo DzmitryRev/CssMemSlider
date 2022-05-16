@@ -4,3 +4,84 @@
     box-sizing: border-box;
 }
 
+
+
+/* slides-container */
+
+.slides-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.slides-container__inner {
+    display: flex;
+    transition: margin 0.3s ease-in-out;
+}
+
+/* --- */
+
+/* slide */
+
+.slide-1,
+.slide-2,
+.slide-3 {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+}
+
+.slide-1 {
+    background: url(https://avatarko.ru/img/kartinka/2/zhivotnye_kot_prikol_ochki_1637.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url(https://resheto.net/images/mater/pozitivnye_kartinki_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-3 {
+    background: url(https://www.iguides.ru/upload/medialibrary/9f8/9f8fdff471b7d281f81f694c100b5adc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --- */
+
+.description-1,
+.description-2,
+.description-3 {
+    display: none;
+}
+
+/* radio */
+
+#one:checked~.slides-container .slides-container__inner {
+    margin-left: 0;
+}
+
+#one:checked~.description-container .description-1 {
+    display: block;
+}
+
+#two:checked~.slides-container .slides-container__inner {
+    margin-left: -300px;
+}
+
+#two:checked~.description-container .description-2 {
+    display: block;
+}
+
+#three:checked~.slides-container .slides-container__inner {
+    margin-left: -600px;
+}
+
+#three:checked~.description-container .description-3 {
+    display: block;
+}
+
+/* --- */
