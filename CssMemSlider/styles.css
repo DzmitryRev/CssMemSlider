@@ -43,9 +43,9 @@ img {
     margin: 0 auto 2rem;
     overflow: hidden;
     border-radius: 1rem;
-    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.44);
-    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.44);
-    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 0px 1.1rem -0.2rem rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 0px 1.1rem -0.2rem rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 1.1rem -0.2rem rgba(0, 0, 0, 0.44);
 }
 
 .slides-container__inner {
@@ -100,4 +100,30 @@ img {
 
 #three:checked~.description-container .description-3 {
     display: block;
+}
+
+@media screen and (max-width: 35rem) {
+    .description-container {
+        flex: 0 0 80%;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    .description-container {
+        flex: 0 0 100%;
+        margin: 0 0 2rem;
+    }
+
+    .slider {
+        justify-content: center;
+    }
+
+    input[type="radio"] {
+        margin-right: 1.5rem;
+    }
+
+    input[type="radio"]:last-of-type {
+        margin-right: 0;
+    }
+
 }
