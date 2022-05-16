@@ -4,7 +4,31 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
 
+/* wrapper */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44);
+}
+
+/* --- */
+
+
+/* slider */
+
+.slider {
+    width: 80%;
+    border: 1px solid green;
+}
+
+/* --- */
 
 /* slides-container */
 
@@ -56,6 +80,8 @@
 .description-2,
 .description-3 {
     display: none;
+    color: #fff;
+    font-size: 2rem;
 }
 
 /* radio */
