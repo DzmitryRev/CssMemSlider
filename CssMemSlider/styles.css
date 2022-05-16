@@ -55,6 +55,8 @@ input[type="radio"]:checked+label>span {
     background-color: rgb(44, 44, 44);
 }
 
+
+
 .slider {
     max-width: 75rem;
     padding: 0 1.5rem;
@@ -95,12 +97,25 @@ input[type="radio"]:checked+label>span {
 .description-container {
     order: 2;
     flex: 0 0 75%;
+    overflow: hidden;
+}
+
+@keyframes description-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .description-1,
 .description-2,
 .description-3 {
+
     display: none;
+    animation: description-animation 0.2s linear;
     color: #fff;
     font-size: 2rem;
 }
