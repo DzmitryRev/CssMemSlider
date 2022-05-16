@@ -40,7 +40,7 @@ img {
     width: 100%;
     max-width: 75rem;
     max-height: 65rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2.5rem;
     overflow: hidden;
     border-radius: 1rem;
     -webkit-box-shadow: 0px 0px 1.1rem -0.2rem rgba(0, 0, 0, 0.44);
@@ -109,21 +109,26 @@ img {
 }
 
 @media screen and (max-width: 25rem) {
+
+    #one,
+    #two,
+    #three {
+        order: 2;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    #three {
+        margin-right: 0;
+    }
+
     .description-container {
+        order: 3;
         flex: 0 0 100%;
-        margin: 0 0 2rem;
+
     }
 
     .slider {
         justify-content: center;
     }
-
-    input[type="radio"] {
-        margin-right: 1.5rem;
-    }
-
-    input[type="radio"]:last-of-type {
-        margin-right: 0;
-    }
-
 }
